@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default strings -->
+    <string name="app_name">BERTEE - InternAssistant</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Section titles -->
+    <string name="title_section_worktime">Work Time</string>
+    <string name="title_section_travel">Travel</string>
+    <string name="title_section_catering">Catering</string>
+
+    <!-- Work Time Fragment texts -->
+    <string name="txt_worktime_hello">Hello on WorkTime Fragment</string>
+
+    <!-- Travel Fragment texts -->
+    <string name="txt_travel_hello">Hello on Travel Fragment</string>
+
+</resources>
