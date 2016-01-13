@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="de.kularts.bertee.WorkTimeFragment">
+    tools:context="de.kularts.bertee.FuelExpensesFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/txt_worktime_hello" />
+        android:text="@string/txt_fuelexp_hello" />
 
 </FrameLayout>

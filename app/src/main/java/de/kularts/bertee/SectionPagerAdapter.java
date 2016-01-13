@@ -36,7 +36,7 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
     public void setSections(){
 
         this.sections.add(new WorkTimeFragment());
-        this.sections.add(new WorkTimeFragment());
+        this.sections.add(new FuelExpensesFragment());
     }
 
     // --------------------------------------------------------------------

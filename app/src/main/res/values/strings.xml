@@ -8,10 +8,10 @@
     <string name="title_section_travel">Travel</string>
     <string name="title_section_catering">Catering</string>
 
-    <!-- Work Time Fragment texts -->
+    <!-- WorkTimeFragment texts -->
     <string name="txt_worktime_hello">Hello on WorkTime Fragment</string>
 
-    <!-- Travel Fragment texts -->
-    <string name="txt_travel_hello">Hello on Travel Fragment</string>
+    <!-- FuelExpensesFragment texts -->
+    <string name="txt_fuelexp_hello">Hello on FuelExpensesFragment</string>
 
 </resources>
