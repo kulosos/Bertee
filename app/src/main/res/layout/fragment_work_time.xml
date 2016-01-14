@@ -1,13 +1,56 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="de.kularts.bertee.WorkTimeFragment">
+    android:layout_height="wrap_content"
+    tools:context=".View.WorkTimeFragment"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/txt_worktime_hello" />
+        android:layout_height="100sp"
+        android:background="#EEEEEE"
+        android:id="@+id/btn_getin_container">
+        <TextView
+            android:id="@+id/txtview_getin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/btn_worktime_getin"
+            android:contentDescription="@string/btn_worktime_getin" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/txtview_getin"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:src="@drawable/ic_getin"
+            android:contentDescription="@string/btn_worktime_getin" />
+    </RelativeLayout>
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="#EEEEEE"
+        android:id="@+id/btn_getout_container">
+        <TextView
+            android:id="@+id/txtview_getout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/btn_worktime_getout"
+            android:contentDescription="@string/btn_worktime_getout" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/txtview_getout"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:src="@drawable/ic_getout"
+            android:contentDescription="@string/btn_worktime_getout" />
+    </RelativeLayout>
+
+</LinearLayout>

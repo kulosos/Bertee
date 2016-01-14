@@ -1,4 +1,4 @@
-package de.kularts.bertee;
+package de.kularts.bertee.Controller;
 
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -12,11 +12,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import de.kularts.bertee.R;
+
 
 public class MainActivity extends AppCompatActivity {
 
     //private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
+    private static final String TAG = MainActivity.class.getName();
 
 
     @Override
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         //mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         // init Singleton classes
         SectionPagerAdapter.initInstance(getSupportFragmentManager(), this);
+        DatabaseController.initInstance(this);
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);

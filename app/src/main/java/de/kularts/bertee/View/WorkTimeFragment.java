@@ -1,4 +1,4 @@
-package de.kularts.bertee;
+package de.kularts.bertee.View;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import de.kularts.bertee.R;
 
 
 public class WorkTimeFragment extends Fragment {
