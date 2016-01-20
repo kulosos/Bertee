@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     //private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-    private static final String TAG = MainActivity.class.getName();
+    private static final String TAG = "BERTEE";//MainActivity.class.getName();
 
 
     @Override

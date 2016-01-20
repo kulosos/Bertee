@@ -2,6 +2,7 @@ package de.kularts.bertee.View;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,11 +14,23 @@ import de.kularts.bertee.Controller.TypefaceWeight;
 import de.kularts.bertee.R;
 
 
-public class WorkTimeFragment extends Fragment {
+public class WorkTimeFragment extends Fragment implements View.OnClickListener {
+
+    // Buttons
+    private View btn_getin;
+    private View btn_getout;
+
+    // DEBUG
+    private static final String TAG = MainActivity.class.getName();
+    private static final boolean D = false;
+
+    // ------------------------------------------------------------------------
 
     public WorkTimeFragment() {
         // Required empty public constructor
     }
+
+    // Interface Implementation -----------------------------------------------
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -27,29 +40,38 @@ public class WorkTimeFragment extends Fragment {
         TextClock txtClock = (TextClock) view.findViewById(R.id.textClock);
         txtClock.setTypeface(TypefaceController.getInstance().getTypeface(TypefaceWeight.Light));
 
-        // instantiate PlaylistController Singleton
-        //PlaylistController.initInstance(this, getActivity());
 
-        // get list from fragment
-        //playlistView = (ListView)view.findViewById(R.id.playlistView);
+        // Set OnClickListeners
+        this.btn_getin = (View)view.findViewById(R.id.btn_getin_container);
+        btn_getin.setOnClickListener(this);
 
-        //PlaylistController.getInstance().initPlaylist();
+        this.btn_getout = (View)view.findViewById(R.id.btn_getout_container);
+        btn_getout.setOnClickListener(this);
 
         return view;
     }
-
-    // ------------------------------------------------------------------------
 
     @Override
     public void onResume(){
         super.onResume();
     }
 
-    // ------------------------------------------------------------------------
-
     @Override
     public void onPause(){
         super.onPause();
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_getin_container:
+                Log.d(TAG, "DEBUGG Get IN Button");
+                break;
+            case R.id.btn_getout_container:
+                Log.d(TAG, "DEBUGG Get OUT Button");
+                break;
+        }
+    }
+
+    // ------------------------------------------------------------------------
 }
