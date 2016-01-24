@@ -79,8 +79,8 @@ public class WorkTimeDatabase extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put(WORKTIME_ID, entry.getId());
-        values.put(WORKTIME_TIMESTAMP, entry.getTimestamp());
-        values.put(WORKTIME_TYPE, entry.getType());
+        //values.put(WORKTIME_TIMESTAMP, entry.getTimestamp());
+        //values.put(WORKTIME_TYPE, entry.getType());
 
         db.insert(TABLE_WORKTIME, null, values);
 

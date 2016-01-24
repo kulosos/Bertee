@@ -29,7 +29,7 @@ public class DatabaseController {
         }
     }
 
-    public static DatabaseController getInstance(){
+    public static DatabaseController instance(){
         return instance;
     }
 

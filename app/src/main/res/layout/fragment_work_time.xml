@@ -21,6 +21,20 @@
             android:autoText="false"
             android:clickable="false"
             android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/txt_worktimestatus" />
     </LinearLayout>
 
     <LinearLayout
@@ -78,5 +92,7 @@
                 android:contentDescription="@string/btn_worktime_getout" />
         </RelativeLayout>
     </LinearLayout>
+
+
 
 </LinearLayout>

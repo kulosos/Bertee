@@ -1,6 +1,5 @@
 package de.kularts.bertee.Controller;
 
-import android.graphics.Typeface;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -38,10 +37,11 @@ public class MainActivity extends AppCompatActivity {
         SectionPagerAdapter.initInstance(getSupportFragmentManager(), this);
         DatabaseController.initInstance(this);
         TypefaceController.initInstance(this);
+        WorkTimeController.initInstance(this);
 
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
-        mViewPager.setAdapter(SectionPagerAdapter.getInstance());
+        mViewPager.setAdapter(SectionPagerAdapter.instance());
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);

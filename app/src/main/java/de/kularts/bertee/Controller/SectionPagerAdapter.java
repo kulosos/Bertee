@@ -31,7 +31,7 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
         }
     }
 
-    public static SectionPagerAdapter getInstance(){
+    public static SectionPagerAdapter instance(){
         return instance;
     }
 

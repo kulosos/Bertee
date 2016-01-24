@@ -22,7 +22,7 @@ public class TypefaceController {
         }
     }
 
-    public static TypefaceController getInstance(){
+    public static TypefaceController instance(){
         return instance;
     }
 
