@@ -4,12 +4,14 @@ import android.app.Activity;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import de.kularts.bertee.R;
 import de.kularts.bertee.View.FuelExpensesFragment;
 import de.kularts.bertee.View.WorkTimeFragment;
+
 
 public class SectionPagerAdapter extends FragmentPagerAdapter {
 
@@ -39,8 +41,13 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
 
     public void setSections(){
 
+        //PreferencesFragment prefFragment = new PreferencesFragment();
+
+
+
         this.sections.add(new WorkTimeFragment());
         this.sections.add(new FuelExpensesFragment());
+        //this.sections.add(prefFragment);
     }
 
     // --------------------------------------------------------------------
