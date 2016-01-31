@@ -2,6 +2,7 @@
     <!-- Default strings -->
     <string name="app_name">BERTEE - InternAssistant</string>
     <string name="action_settings">Settings</string>
+    <string name="txt_placeholder">Placeholder Text</string>
 
     <!-- Section titles -->
     <string name="title_section_worktime">Work Time</string>
@@ -16,5 +17,14 @@
 
     <!-- FuelExpensesFragment texts -->
     <string name="txt_fuelexp_hello">Hello on FuelExpensesFragment</string>
+
+
+    <!-- Preferences Activity texts-->
+    <string name="lbl_prefs_worktime_section">Worktime</string>
+    <string name="lbl_prefs_fuelexp_secion">Fuel Expenses</string>
+    <string name="lbl_prefs_catering_section">Canteen</string>
+    <string name="lbl_prefs_generalinfo_section">General Informations</string>
+
+
 
 </resources>
